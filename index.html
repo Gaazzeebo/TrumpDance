@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donald Trump Dancing</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for Enhanced Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Enjoy the Show!</h1>
+    </header>
+
+    <!-- Overlay for Aesthetic Effect -->
+    <div class="overlay"></div>
+
+    <!-- Video Section -->
+    <main>
+        <section class="video-section">
+            <div class="video-container">
+                <!-- Embedded YouTube Video with Sound and Controls Enabled -->
+                <iframe 
+                    src="https://www.youtube.com/embed/Zph7YXfjMhg?autoplay=1&loop=1&playlist=Zph7YXfjMhg&controls=1&mute=0&modestbranding=1&showinfo=0&rel=0" 
+                    title="Donald Trump Dancing" 
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media; fullscreen" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Powered by 
+                <a href="https://gaazzeebo.net" target="_blank" class="gaazzeebo-link">
+                    Gaazzeebo
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- QR Code Container -->
+    <div class="qr-container">
+        <div id="qrcode"></div>
+        <p>Scan to View</p>
+    </div>
+
+    <!-- QRCode.js Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+        // Replace the URL below with your hosted web page URL once deployed
+        var url = "https://<your-username>.github.io/UltimateTrumpDancePage/";
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: url,
+            width: 128,
+            height: 128,
+            colorDark : "#FF4500",
+            colorLight : "#00000000",
+            correctLevel : QRCode.CorrectLevel.H
+        });
+    </script>
+</body>
+</html>
